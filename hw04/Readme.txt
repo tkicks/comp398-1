@@ -1,3 +1,4 @@
-after a while of figuring out strategies all my code just stopped working.  it would no longer output to a text file like it was before even though I hadn't made fundemental changes and I gave up trying to fix it 
+I only have #-> <h1></h1> barely working
 
-:(
+
+style guide https://google-styleguide.googlecode.com/svn/trunk/pyguide.html
