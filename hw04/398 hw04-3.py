@@ -1,10 +1,10 @@
 ## global data
 path = raw_input("Enter a path to an input file\n>> ")
 #fin = open(path, "rt")
-fout = open("samp.txt", "wt")
+fout = open("readmeout.txt", "wt")
 #searchfile = open(path, "r")
 
-end_h = "</h>\n"
+
 
 
 def htag(line):
@@ -12,37 +12,37 @@ def htag(line):
     x = y.count("#")
     if x == 1:
         rline = line.translate(None, "#")
-        newline = "<h1> " + rline.strip() + end_h
+        newline = "<h1> " + rline.strip() + "</h1>\n"
         #fout.write(newline)
         ptag(newline)
         
     elif x == 2:
         rline = line.translate(None, "#")
-        newline = "<h2>" + rline.strip() + end_h
+        newline = "<h2>" + rline.strip() + "</h2>\n"
         #fout.write(newline)
         ptag(newline)
     
     elif x == 3:
         rline = line.translate(None, "#")
-        newline = "<h3>" + rline.strip() + end_h
+        newline = "<h3>" + rline.strip() + "</h3>\n"
         #fout.write(newline)
         ptag(newline)
 
     elif x == 4:
         rline = line.translate(None, "#")
-        newline = "<h4>" + rline.strip() + end_h
+        newline = "<h4>" + rline.strip() + "</h4>\n"
         #fout.write(newline) 
         ptag(newline)
     
     elif x == 5:
         rline = line.translate(None, "#")
-        newline = "<h5>" + rline.strip() + end_h
+        newline = "<h5>" + rline.strip() + "</h5>\n"
         #fout.write(newline) 
         ptag(newline)
         
     elif x == 6:
         rline = line.translate(None, "#")
-        newline = "<h6>" + rline.strip() + end_h
+        newline = "<h6>" + rline.strip() + "</h6>\n"
         #fout.write(newline) 
         ptag(newline)
     
