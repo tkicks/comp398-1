@@ -1,0 +1,1 @@
+Three dropdown menus containing all the majors in each area
