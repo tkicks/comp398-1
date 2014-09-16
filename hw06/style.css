@@ -1,0 +1,49 @@
+
+
+ul#navlist a
+{
+font-weight: bold;
+text-decoration: none;
+}
+
+ul#navlist, ul#navlist ul, ul#navlist li
+{
+margin: 10px;
+padding: 0px;
+padding-right: 100px;
+list-style-type: none;
+}
+
+/* arranged at top */
+ul#navlist li { 
+	float: left;
+}
+
+/* top box style */
+ul#navlist li a
+{
+color: #ffffff;
+background-color: #2E64FE;
+padding: 3px;
+border: 3px #ffffff outset;
+}
+
+
+body {
+	background: url("http://wallalay.com/wp-content/uploads/2014/09/Gradient-Background-94.jpg");
+	background-repeat: no-repeat;
+}
+
+
+ul#subnavlist { display: none;  }
+ul#subnavlist li { float: none; }
+
+
+
+ul#navlist li:hover ul#subnavlist
+{
+display: block;
+position: absolute;
+font-size: 12pt;
+padding-top: 10px;
+}
