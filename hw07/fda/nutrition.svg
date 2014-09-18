@@ -1,0 +1,143 @@
+<svg version="1.1"
+     baseProfile="full"
+     width="405" height="805"
+     xmlns="http://www.w3.org/2000/svg">
+
+     <line x1="15" y1="8" x2="15" y2="593" stroke="black" stroke-width="2"/>
+     <line x1="292" y1="8" x2="292" y2="593" stroke="black" stroke-width="2"/>
+
+     <line x1="14" y1="8" x2="293" y2="8" stroke="black" stroke-width="2"/>
+     <line x1="14" y1="593" x2="293" y2="593" stroke="black" stroke-width="2"/>
+
+     <text x="20" y="40" font-size="38" font-family="Helvetica" font-weight="bold">Nutrition Facts</text>
+
+     <text x="20" y="60" font-size="14" font-family="Helvetica">Serving Size 2/3 cup (55g)</text>
+
+     <text x="20" y="75" font-size="14" font-family="Helvetica">Servings Per Container About 8</text>
+
+     <line x1="20" y1="90" x2="285" y2="90" stroke="black" stroke-width="10"/>
+
+     <text x="20" y="110" font-size="12" font-weight="bold" font-family="Helvetica">Amount Per Serving</text>
+
+     <line x1="20" y1="118" x2="285" y2="118" stroke="black" stroke-width=".5"/>
+
+     <text x="20" y="131" font-size="14" font-weight="bold" font-family="Helvetica">Calories </text>
+     <text x="80" y="131" font-size="13" font-family="Helvetica">230</text>
+     <text x="178" y="131" font-size="12" font-family="Helvetica">Calories from Fat 72</text>
+
+     <line x1="20" y1="140" x2="285" y2="140" stroke="black" stroke-width="5"/>
+
+     <text x="205" y="155" font-size="12" font-weight="bold" font-family="Helvetica">% Daily Value*</text>
+
+     <line x1="20" y1="160" x2="285" y2="160" stroke="gray" stroke-width="1"/>
+
+     <text x="20" y="175" font-size="14" font-weight="bold" font-family="Helvetica">Total Fat</text>
+     <text x="82" y="175" font-size="13" font-family="Helvetica">8g</text>
+     <text x="258" y="175" font-size="14" font-weight="bold" font-family="Helvetica">12%</text>
+
+     <line x1="40" y1="180" x2="285" y2="180" stroke="gray" stroke-width="1"/>
+
+     <text x="40" y="195" font-size="13" font-family="Helvetica">Saturated Fat 1g</text>
+     <text x="265" y="195" font-size="14" font-weight="bold" font-family="Helvetica">5%</text>
+
+     <line x1="40" y1="200" x2="285" y2="200" stroke="gray" stroke-width="1"/>
+
+     <text x="40" y="215" font-size="13" font-wight="italic" font-family="Helvetica">Trans Fat 0g</text>
+
+     <line x1="40" y1="220" x2="285" y2="220" stroke="gray" stroke-width="1"/>
+
+     <text x="20" y="235" font-size="14" font-weight="bold" font-family="Helvetica">Cholesterol</text>
+     <text x="100" y="235" font-size="13" font-family="Helvetica">0mg</text>
+     <text x="265" y="235" font-size="14" font-weight="bold" font-family="Helvetica">0%</text>
+
+     <line x1="20" y1="240" x2="285" y2="240" stroke="gray" stroke-width="1"/>
+
+     <text x="20" y="255" font-size="14" font-weight="bold" font-family="Helvetica">Sodium</text>
+     <text x="72" y="255" font-size="13" font-family="Helvetica">160mg</text>
+     <text x="265" y="255" font-size="14" font-weight="bold" font-family="Helvetica">7%</text>
+
+     <line x1="20" y1="260" x2="285" y2="260" stroke="gray" stroke-width="1"/>
+
+     <text x="20" y="275" font-size="14" font-weight="bold" font-family="Helvetica">Total Carbohydrate</text>
+     <text x="150" y="275" font-size="13" font-family="Helvetica">37g</text>
+     <text x="258" y="275" font-size="14" font-weight="bold" font-family="Helvetica">12%</text>
+
+     <line x1="20" y1="280" x2="285" y2="280" stroke="gray" stroke-width="1"/>
+
+     <text x="40" y="295" font-size="13" font-family="Helvetica">Dietary Fiber 4g</text>
+     <text x="258" y="295" font-size="14" font-weight="bold" font-family="Helvetica">16%</text>
+
+     <line x1="40" y1="300" x2="285" y2="300" stroke="gray" stroke-width="1"/>
+
+     <text x="40" y="315" font-size="13" font-wight="italic" font-family="Helvetica">Sugars 1g</text>
+
+     <line x1="40" y1="320" x2="285" y2="320" stroke="gray" stroke-width="1"/>
+
+     <text x="20" y="335" font-size="14" font-weight="bold" font-family="Helvetica">Protein</text>
+     <text x="72" y="335" font-size="13" font-family="Helvetica">3g</text>
+    
+    <line x1="20" y1="345" x2="285" y2="345" stroke="black" stroke-width="10"/>
+
+    <text x="20" y="365" font-size="14" font-family="Helvetica">Vitamin A</text>
+     <text x="258" y="365" font-size="14" font-family="Helvetica">10%</text>
+
+     <line x1="20" y1="370" x2="285" y2="370" stroke="gray" stroke-width="1"/>
+
+     <text x="20" y="385" font-size="14" font-family="Helvetica">Vitamin C</text>
+     <text x="265" y="385" font-size="14" font-family="Helvetica">8%</text>
+
+     <line x1="20" y1="390" x2="285" y2="390" stroke="gray" stroke-width="1"/>
+
+     <text x="20" y="405" font-size="14" font-family="Helvetica">Calcium</text>
+     <text x="258" y="405" font-size="14" font-family="Helvetica">20%</text>
+
+     <line x1="20" y1="410" x2="285" y2="410" stroke="gray" stroke-width="1"/>
+
+     <text x="20" y="425" font-size="14" font-family="Helvetica">Iron</text>
+     <text x="258" y="425" font-size="14" font-family="Helvetica">45%</text>
+
+     <line x1="20" y1="430" x2="285" y2="430" stroke="gray" stroke-width="1"/>
+
+     <text x="20" y="445" font-size="10" font-family="Helvetica">* Percent Daily Values are based on a 2,000 calorie diet.</text>
+     <text x="27" y="458" font-size="10" font-family="Helvetica">Your daily value may be higher or lower depending on</text>
+     <text x="27" y="471" font-size="10" font-family="Helvetica">your calorie needs.</text>
+
+     <text x="130" y="490" font-size="11" font-family="Helvetica">Calories:</text>
+     <text x="195" y="490" font-size="11" font-family="Helvetica">2,000</text>
+     <text x="245" y="490" font-size="11" font-family="Helvetica">2,500</text>
+
+     <line x1="20" y1="495" x2="285" y2="495" stroke="gray" stroke-width="1"/>
+
+     <text x="20" y="510" font-size="11" font-family="Helvetica">Total Fat</text>
+     <text x="130" y="510" font-size="11" font-family="Helvetica">Less than</text>
+     <text x="195" y="510" font-size="11" font-family="Helvetica">65g</text>
+     <text x="245" y="510" font-size="11" font-family="Helvetica">80g</text>
+
+     <text x="35" y="523" font-size="11" font-family="Helvetica">Sat Fat</text>
+     <text x="130" y="523" font-size="11" font-family="Helvetica">Less than</text>
+     <text x="195" y="523" font-size="11" font-family="Helvetica">20g</text>
+     <text x="245" y="523" font-size="11" font-family="Helvetica">25g</text>
+
+     <text x="20" y="536" font-size="11" font-family="Helvetica">Cholesterol</text>
+     <text x="130" y="536" font-size="11" font-family="Helvetica">Less than</text>
+     <text x="195" y="536" font-size="11" font-family="Helvetica">300mg</text>
+     <text x="245" y="536" font-size="11" font-family="Helvetica">300mg</text>
+
+     <text x="20" y="549" font-size="11" font-family="Helvetica">Sodium</text>
+     <text x="130" y="549" font-size="11" font-family="Helvetica">Less than</text>
+     <text x="195" y="549" font-size="11" font-family="Helvetica">2,400mg</text>
+     <text x="245" y="549" font-size="11" font-family="Helvetica">2,400mg</text>
+
+     <text x="20" y="562" font-size="11" font-family="Helvetica">Total Carbohydrate</text>
+     <text x="195" y="562" font-size="11" font-family="Helvetica">300g</text>
+     <text x="245" y="562" font-size="11" font-family="Helvetica">300mg</text>
+
+     <text x="35" y="575" font-size="11" font-family="Helvetica">Dietary Fiber </text>
+     <text x="195" y="575" font-size="11" font-family="Helvetica">25g</text>
+     <text x="245" y="575" font-size="11" font-family="Helvetica">30mg</text>
+
+
+
+
+
+</svg>
