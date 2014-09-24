@@ -1,14 +1,3 @@
-#empty {background: lime;
-  height: 200px;
-  width: 200px;}
-
-#notempty { background: red;
-  height: 200px;
-  width: 200px;}
-
-
-#first-type {background-color: lime;}
-
 /*
     So you like the style of impress.js demo?
     Or maybe you are just curious how it was done?
@@ -60,6 +49,9 @@ time, mark, audio, video {
     vertical-align: baseline;
 }
 
+small{
+    font-size: 60%
+    }
 /* HTML5 display-role reset for older browsers */
 article, aside, details, figcaption, figure,
 footer, header, hgroup, menu, nav, section {
@@ -71,6 +63,53 @@ body {
 ol, ul {
     list-style: none;
 }
+h1{
+    font-family: georgia, serif;
+    font-size: 90px;
+    letter-spacing: -1pt;
+    padding:  9px;
+    text-align: center;
+    text-shadow: 3px 4px 7px rgba(59, 255, 255, 0.8);
+    word-spacing: 6pt;
+}
+h2{
+    font-family: georgia, serif;
+    font-size: 65px;
+    letter-spacing: -1pt;
+    padding:  2px;
+    text-align: center;
+    word-spacing: 6pt;
+}
+h3{
+    font-family: georgia, serif;
+    font-size: 100px;
+    letter-spacing: -1pt;
+    text-align: center;
+    left: 0;
+    line-height: 200px;
+    margin: auto;
+    margin-top: -100px;
+    position: absolute;
+    top: 50%;
+    width: 100%;
+}
+h4{
+    text-align: center;
+}
+h5{
+    font-family: georgia, serif;
+    font-size: 190px;
+    letter-spacing: -1pt;
+    padding-top:  290px;
+    text-align: center;
+    text-shadow: 4px 5px 7px rgba(59, 255, 255, 0.8);
+    vertical-align: middle;
+    word-spacing: 6pt;
+}
+h6{
+    text-indent:50px;
+}
+
 blockquote, q {
     quotes: none;
 }
@@ -92,10 +131,40 @@ table {
     And yes, there is a lot of repetition there because of -prefixes but we don't
     want to leave anybody behind.
 */
+input:enabled{
+    color: #333;
+    font-style: italic;
+}
+
+ input:disabled{
+    background: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAQAAAAECAYAAACp8Z5+AAAAIklEQVQIW2NkQAKrVq36zwjjgzhhYWGMYAEYB8RmROaABADeOQ8CXl/xfgAAAABJRU5ErkJggg==) repeat;
+    
+}
+
+
+#empty {background: lime;
+  height: 200px;
+  width: 200px;}
+
+#notempty { background: red;
+  height: 200px;
+  width: 200px;}
+
+
+#first-type {background-color: lime;}
+
+input[type=checkbox] + label {
+  color: #ccc;
+ 
+}
+
+input[type=checkbox]:checked + label {
+  color: #0A0;
+  }
+  
 body {
     font-family: 'PT Sans', sans-serif;
     min-height: 740px;
-
     background: rgb(215, 215, 215);
     background: -webkit-gradient(radial, 50% 50%, 0, 50% 50%, 500, from(rgb(240, 240, 240)), to(rgb(78, 21, 79)));
     background: -webkit-radial-gradient(rgb(240, 240, 240), rgb(78, 21, 79));
@@ -131,7 +200,7 @@ a {
 
 a:hover,
 a:focus {
-    background: rgba(255,255,255,1);
+    background: rgba(255,255,0,1);
     text-shadow: -1px -1px 2px rgba(100,100,100,0.5);
 }
 
@@ -186,7 +255,7 @@ a:focus {
     -o-box-sizing:      border-box;
     box-sizing:         border-box;
 
-    font-family: 'PT Serif', georgia, serif;
+    font-family: "Palatino Linotype", "Book Antiqua", Palatino, serif;
     font-size: 48px;
     line-height: 1.5;
 }
@@ -232,9 +301,9 @@ a:focus {
     color: rgb(102, 102, 102);
     text-shadow: 0 2px 2px rgba(0, 0, 0, .1);
 
-    font-family: 'Open Sans', Arial, sans-serif;
-    font-size: 30px;
-    line-height: 36px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 40px;
+    line-height: 46px;
     letter-spacing: -1px;
 }
 
@@ -260,6 +329,32 @@ a:focus {
     First is the title step with a big <h1> (no room for padding) and some
     3D positioning along Z axis.
 */
+
+#example1{
+    letter-spacing: -1pt;
+    word-spacing: 3pt;
+    font-size: 40px;
+    text-align: left;
+    font-family: courier new, courier, monospace;
+    line-height: 1;
+}
+
+#realexample1{
+    font-size: 50px;
+    font-family:georgia,serif;
+    font-weight: bold;
+    font-style: oblique;
+}
+
+#defaultlink{color: #0000EE;}
+#defaultvisited  {color: #551A8B;}
+#defaulthover  {text-decoration: underline;}
+#defaultactive  {color: #EE0000;}
+
+#customlink{color: #E6005C;}
+#customvisited  {color: #00FFFF;}
+#customhover  {color: #FFFF00;}
+#customactive  {color: #FF0000;}
 
 #title {
     padding: 0;
@@ -299,10 +394,11 @@ a:focus {
     Let's move to 'big thoughts' with centered text and custom font sizes.
 */
 #big {
-    width: 600px;
+    width: 900px;
     text-align: center;
-    font-size: 60px;
-    line-height: 1;
+    font-size: 70px;
+    line-height: 1.2;
+    text-shadow: 2px 2px 2px #FF0066
 }
 
 #big b {
@@ -658,7 +754,7 @@ a:focus {
     transform:         translateY(0px);
 
     /*
-        Now for fade in transition we have the oposite situation from the one
+        Now for fade in transition we have the opposite situation from the one
         above.
 
         First after 4.5s delay we animate the transform property to move the hint

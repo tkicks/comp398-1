@@ -1,5 +1,4 @@
 <!doctype html>
-
 <!--
 
     Welcome to the light side of the source, young padawan.
@@ -68,10 +67,10 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=1024" />
     <meta name="apple-mobile-web-app-capable" content="yes" />
-    <title>impress.js | presentation tool based on the power of CSS3 transforms and transitions in modern browsers | by Bartek Szopka @bartaz</title>
+    <title>Classes, ID's and Pseudo-Selectors</title>
     
-    <meta name="description" content="impress.js is a presentation tool based on the power of CSS3 transforms and transitions in modern browsers and inspired by the idea behind prezi.com." />
-    <meta name="author" content="Bartek Szopka" />
+    <meta name="description" content="an impress.js presentation on selectors and pseudo-selectors" />
+    <meta name="author" content="Sven, Emily, Jon, and Breanna" />
 
     <link href="http://fonts.googleapis.com/css?family=Open+Sans:regular,semibold,italic,italicsemibold|PT+Sans:400,700,400italic,700italic|PT+Serif:400,700,400italic,700italic" rel="stylesheet" />
 
@@ -164,61 +163,288 @@
         It will not be rotated or scaled.
         
     -->
-    <div id="bored" class="step slide" data-x="-1000" data-y="-1500">
-        <q>HTML selectors</q>
-        <q>A simple presentation</q>
+<!-- Title Slide-->
+    
+    <div id="bored" class="step slide"  data-x="0" data-y="0" data-scale = "3">
+        <q> <h1>Selectors and Pseudo-Selectors</h1> </q>
+        <q><h2>By Sven, Emily, Breanna, Jon</h2></q>
     </div>
-
-    <!--
-        
-        The `id` attribute of the step element is used to identify it in the URL, but it's optional.
-        If it is not defined, it will get a default value of `step-N` where N is a number of slide.
-        
-        So in the example below it'll be `step-2`.
-        
-        The hash part of the url when this step is active will be `#/step-2`.
-        
-        You can also use `#step-2` in a link, to point directly to this particular step.
-        
-        Please note, that while `#/step-2` (with slash) would also work in a link it's not recommended.
-        Using classic `id`-based links like `#step-2` makes these links usable also in fallback mode.
-        
-    -->
-    <div class="step slide" data-x="0" data-y="-1500">
-        <q>The selector in HTML and CSS is used to modify elements in HTML</q>
-        <q></q>
-    </div>
-
-    <div class="step slide" data-x="1000" data-y="-1500">
-        <q>Three of the different kinds of selectors are classes, I.D.s and element selectors</q>
-    </div>
-
-    <!--
-        
-        This is an example of step element being scaled.
-        
-        Again, we use a `data-` attribute, this time it's `data-scale="4"`, so it means that this
-        element will be 4 times larger than the others.
-        From presentation and transitions point of view it means, that it will have to be scaled
-        down (4 times) to make it back to its correct size.
-        
-    -->
     
 
-   <div  class="step" data-x="-10000" data-y="-6000" data-z="-10000" data-scale="4">
+    
+<!-- Selectors Title (Bre)-->       
+    <div class="step slide" data-x="10000" data-y="-8000" data-scale = "2">
+        <h3><b> Selectors </b></h3>
+    </div>
+    
+    
+    <div class="step" data-x="10000" data-y="-9500" data-rotate="180" data-scale="1">
+    <h1> Examples </h1>
+    <img src="images/selectorexample.png" >
+    </div>
+
+    
+<!-- General Overview-->    <!-- 2 Slides-->        <!-- Presenter: Bre -->
+
+    
+    
+<!-- Classes-->     <!-- 4 Slides-->        <!-- Presenter: Sven --> 
+    <div class="step slide" data-x="-10000" data-y="8000" data-scale = "2">
+        <h3> Classes </h3>
+    </div>
+      <div class="step" data-x="-12000" data-y="8000" data-z="-7000" data-rotate="700" data-scale="1">
+
+        <p>Classes are multiple use selectors</p>
+        <p>meaning that they can apply to as many different elements as you want</p>
+        <p>You can use them to style specific elements in your code without changing all elements of that type</p>
+    </div>
+
+
+    <div class="step" data-x="-14000" data-y="8000" data-z="10000" data-rotate="700" data-scale="1">
+
+        <p>Here is some example code in CSS</p>
+        <p>.stuff{font-family: helvetica, serif;}</p>
+        <p>Here is some example code in HTML</p>
+        <p>(td class="stuff")Nutrition Facts(/td)</p>
+    </div>
+    
+    
+<!-- IDs-->     <!-- 4 Slides-->        <!-- Presenter: Emily --> 
+    
+    <div class="step slide" data-x="10000" data-y="8000" data-scale = "2">
+        <h3> ID's </h3>
+    </div>  
+
+    <div class="step" data-x="13000" data-y="8000" data-rotate="30" data-scale="1">
+        <h2>What are they?</h2>
+        <p>ID's are essentially a one-time-use version of classes.</p>
+    </div>
+    
+    <div class="step" data-x="15000" data-y="8000" data-rotate="0" data-scale="1">
+        <h2>When do you use them?</h2>
+        <p> When there is one specific element (such as a paragraph or ordered list) that you want to apply special formatting to.</p>
+    </div>
+    
+    <div class="step" data-x="17000" data-y="8000" data-rotate="30" data-scale="1">
+        <h2>How do you use them?</h2>
+        <h4> <p><b> Define them in the .css: </b> </p>
+                    <p>#idName{style rules} </p>
+                    <p>-or- </p>
+                    <p>elementType#idName{style rules} </p>
+                    <p><b> Assign id to an element in the .html: </b></p>
+                    <p> <code> &lt elementType id="idName" ...&gt </code></p>
+        </h4>
+    </div>
+    
+    <div id="example1" class="step" data-x="19000" data-y="8000" data-rotate="0" data-scale="1">
+        <h2>Example:</h2>
+        <p> In your .css:</p>
+            <p><code>p#phoneNum{</p></code>
+            <h6><code>font-size:50px;</code></h6>
+            <h6><code>font-family:georgia,serif;</code></h6>
+            <h6><code>font-weight: bold;</code></h6>
+            <h6><code>font-style: oblique;</code></h6>
+            <h6><code>}</code></h6>
+            <p> In your .html:</p>
+            <p><code> &lt p id=phoneNum&gt(123)456-7890&lt /p &gt </p></code>
+    </div>
+    <div class="step" data-x="21000" data-y="8000" data-rotate="30" data-scale="1">
+        <h2>How it looks on the page:</h2>
+        <p id="realexample1"> (123) 456 - 7890</p>
+    </div>
+    
+    <!-- Elements-->    <!-- 4 Slides-->        <!-- Presenter: Jon --> 
+    <div class="step slide" data-x="-12000" data-y="-8000" data-scale = "2">
+        <h3> Element Selectors </h3>
+    </div>
+    
+<!-- Pseudo Selectors Title (Bre)--> 
+    <div class="step slide" data-x="12000" data-y="-17000" data-scale = "3">
+        <h3><b> Pseudo-Selectors </b></h3>
+    </div>
+    
+<!-- General Overview-->    <!-- 2 Slides-->        <!-- Presenter: Bre -->
+
+    
+    
+<!-- linking Pseudo-Selectors Title -->
+    <div class="step" data-x="25000" data-y="8000" data-rotate="0" data-scale="2">
+        <h2>Link Pseudo-Selectors</h2>
+        <ul>
+            <li> :link </li>
+            <li> :visited </li>
+            <li> :hover </li>
+            <li> :active </li>
+        </ul>
+        <p> <small> In your .css, it is very important to define these elements in this order to avoid accidental overrides of style formatting. </small></p>
+    </div>
+    
+<!-- :link -->  <!-- 2-3 Slides-->      <!-- Presenter: Emily -->
+    <div class="step" data-x="27000" data-y="8000" data-rotate="30" data-scale="1">
+        <h2>:link</h2>
+        <p> Select links in elements and change their formatting.</p>
+    </div>
+<!-- :visited -->   <!-- 2-3 Slides-->      <!-- Presenter: Emily -->
+    <div class="step" data-x="29000" data-y="8000" data-rotate="60" data-scale="1">
+        <h2>:visited</h2>
+        <p> Select links in elements that have previously been activated and change their formatting.</p>
+    </div>
+<!-- :active -->    <!-- 2-3 Slides-->      <!-- Presenter: Emily -->
+    <div class="step" data-x="31000" data-y="8000" data-rotate="90" data-scale="1">
+        <h2>:active</h2>
+        <p> Select links in elements that are currently being activated (clicked on) and change their formatting.</p>
+    </div>
+<!-- :hover -->     <!-- 2-3 Slides-->      <!-- Presenter: Emily -->
+    <div class="step" data-x="33000" data-y="8000" data-rotate="60" data-scale="1">
+        <h2>:hover</h2>
+        <p> Select links which are currently being touched by the cursor (but not being activated) and change their formatting.</p>
+    </div>
+    
+    <div class="step" data-x="35000" data-y="8000" data-rotate="0" data-scale="1">
+        <h2>Default settings for linking selectors</h2>
+        <h4><small> (html5)</small></h4>
+        <ul> 
+            <li> :link  {color: #0000EE;} <i>(blue)</i></li>
+            <li> :visited  {color: #551A8B;} <i>(purple)</i></li>
+            <li> :hover  {text-decoration: underline;} </li>
+            <li> :active  {color: #EE0000;} <i>(red)</i></li>
+        </ul>
+    </div>
+    
+    <div class="step" data-x="36500" data-y="8000" data-rotate="0" data-scale="1">
+        <h2> Defaults look like: </h2>
+        <p id="defaultlink"> :link </p>
+        <p id="defaultvisited"> :visited </p>
+        <p id="defaulthover"> :hover</p>
+        <p id="defaultactive"> :active</p>
+        </ul>
+    </div>
+    
+    <div class="step" data-x="38000" data-y="8000" data-rotate="0" data-scale="1">
+        <h2> But we can make our own! </h2>
+        <p> :link{color: #E6005C;}</p>
+        <p id="customlink"> link </p>
+        <p> :visited{color: #00FFFF;}</p>
+        <p id="customvisited"> visited </p>
+        <p> hover{color: #FFFF00;}</p>
+        <p id="customhover"> hover</p>
+        <p> active{color: #FF0000;} </p>
+        <p id="customactive"> active</p>
+        </ul>
+    </div>
+
+        <div class="step" data-x="39000" data-y="8000" data-rotate="90" data-scale="1">
+        <h2> Privacy Safeguards: </h2>
+        <p> Usually any text effects can be used.</p>
+        <p> <u> However</u>, to protect people's privacy, browsers restrict the effects used for :visited to color effects.</p>
+        </ul>
+    </div>
+    
+    <div class="step" data-x="39000" data-y="10000" data-rotate="180" data-scale="1">
+        <h2> Use on Mobile Devices </h2>
+        <p> <i>:link</i>, <i>:visited</i>, and <i>:active</i> work normally on mobile browsers.</p>
+        <p> <b><i>:hover</b></i> cannot be used on any mobile device with a touch screen because there is no cursor to hover over an element. </p>
+        
+        </ul>
+    </div>
+
+    
+    
+<!-- :focus -->     <!-- 2-3 Slides-->      <!-- Presenter: Sven -->
+ <div class="step" data-x="-16000" data-y="-16000" data-z="8000" data-rotate="300" data-scale="1">
+        <p>Use of the focus pseudo-selector is mostly for keyboard navagation of a site</p>
+        <p>This is not just limited to links but to input boxes and text as well</p>
+    </div>
+
+    <div id = "textstuff" class="step" data-x="-18000" data-y="8000" data-z="-2000" data-rotate="300" data-scale="1">
+            <p>Here is what the CSS code would look like, and in action</p>
+            <a>a:focus {
+                    background: yellow;
+                    }
+            </a>
+    </div>
+<!-- :target -->    <!-- 2-3 Slides-->      <!-- Presenter: Sven -->
+<div class="step" data-x="-20000" data-y="8000" data-z="7000" data-rotate="600" data-scale="1">
+            <p>The target pseudo-selector is a powerful tool used not just to link to sites but to specific sections of a page</p>
+            <p>the pseudo-selector will jump to a point in the page where the hash mark in the url matches the I.D. of the selector</p>
+            <a href="https://en.wikipedia.org/wiki/Norway#Viking_Age">an example of the target pseudo-selector in action can be found here</a>
+
+    </div>
+
+    <div class="step" data-x="-22000" data-y="8000" data-z="2000" data-rotate="800" data-scale="1">
+
+        <p>Here is what that CSS code would look like</p>
+        <p>#voters:target {}</p>
+        <p>and the HTML</p>
+        <p>(section id="voters"> Content (/section></p>
+    </div>
+
+<!-- :enabled/disabled -->  <!-- 2-3 Slides-->      <!-- Presenter: Sven -->
+<div class="step" data-x="-24000" data-y="8000" data-z="7000" data-rotate="700" data-scale="1">
+
+        <p>The enabled and disabled pseudo-selectors are used to select enabled and disabled areas of input</p>
+    </div>
+
+
+    <div id = "out" class="step" data-x="-26000" data-y="8000" data-z="7000" data-rotate="200" data-scale="1">
+        <label for="name">Enabled Input:</label>
+            <input type="text" autofocus>
+            <hr>
+        <label for="name">Disabled Input:</label>
+        <input type="text" disabled>
+    </div>
+
+    <div class="step" data-x="-28000" data-y="8000" data-z="-9000" data-rotate="900" data-scale="1">
+
+        <p>Here is what that code would look like in CSS</p>
+        <p> input:enabled{color: #333;font-style: italic;}
+            input:disabled{background: url(data:image/png;base64,iVBOR...) repeat;}</p>
+        <p>and in HTML</p>
+        <p> (label for="name">Enabled Input:(/label)
+            (input type="text" autofocus)
+            (label for="name">Disabled Input:(/label(
+            (input type="text" disabled)</p>
+    </div>
+
+<!-- :checked/indeterminate -->     <!-- 2-3 Slides-->      <!-- Presenter: Sven -->
+<div class="step" data-x="-30000" data-y="8000" data-z="-7000" data-rotate="700" data-scale="1">
+
+        <p>The checked pseudo selector effects check boxes in different states</p>
+    </div>
+
+    <div class="step" data-x="-32000" data-y="8000" data-z="10000" data-rotate="100" data-scale="1">
+
+        <input type="checkbox" id="ossm" name="ossm">
+        <label for="ossm">change my color</label>
+    </div>
+
+    <div class="step" data-x="-34000" data-y="8000" data-z="-7000" data-rotate="700" data-scale="1">
+
+        <p>Here is what that code looks like in CSS</p>
+        <p>input[type=checkbox] + label {color: #ccc;}
+            input[type=checkbox]:checked + label {color: #0A0;}</p>
+        <p>and HTML</p>
+        <p>(input type="checkbox" id="ossm" name="ossm")
+        (label for="ossm">change my color(/label)</p>
+    </div>
+
+    
+    
+<!-- :empty -->     <!-- 2-3 Slides-->      <!-- Presenter: Jon -->
+<div  class="step" data-x="-10000" data-y="-8000" data-z="-10000" data-scale="4">
         <span>The ":empty" pseudo-selector is used to </span>
         <span>apply styles to elements that contain no children.</span>
         <span><p>Note: <strong>Comments do not count as children.</strong></p></span>
     </div>
 
-    <div  class="step" data-x="-9000" data-y="-2000" data-z="-2000" data-scale="4">
+    <div  class="step" data-x="-12000" data-y="-8000" data-z="-2000" data-scale="4">
         <span><p>The syntax for the :empty pseudo-selector is:</p></span>
         <span><strong>&ltelement&gt:empty {style properties}</strong></span>
         <span><p>For example: <p>.box:empty {background: lime;}</p></p></span>
 
     </div>
 
-    <div  class="step" data-x="-5000" data-y="-2000" data-z="-4000" data-scale="4">
+    <div  class="step" data-x="-14000" data-y="-8000" data-z="-4000" data-scale="4">
         <p><strong>HTML:</strong></p>
         <span><p>&ltdiv class="box">&lt!-- This is lime --&gt&lt/div&gt</p></span>
         <span><p>&ltdiv class="box">This is red&lt/div&gt</p></strong></span>
@@ -232,20 +458,70 @@
 
     </div>
 
-    <div  class="step" data-x="-2000" data-y="-6000" data-z="10000" data-scale="4">
+    <div  class="step" data-x="-16000" data-y="-10000" data-z="10000" data-scale="4">
         <p id="empty"></p>
         <p id="notempty">This is red</p>
 
     </div>
 
-
-    <div  class="step" data-x="-1100" data-y="-9000" data-z="-700" data-scale="4">
-        <p>The :first-of-type pseudo-selector will apply styling to the first of each element type within the given element. </p>
+<!-- :first-child/:last-child -->   <!-- 2-3 Slides-->      <!-- Presenter: Jon -->
+<div  class="step" data-x="-18000" data-y="-12000" data-z="-10000" data-scale="4">
+        <p>The :first-child pseudo-selector will apply styling to the first child of it's parent. </p>
 
     </div>
 
 
-    <div  class="step" data-x="-5000" data-y="-9000" data-z="-3000" data-scale="4">
+    <div  class="step" data-x="-20000" data-y="-14000" data-z="-13000" data-scale="4">
+        <p><strong>CSS:</strong></p>
+        <p>div :first-child <p>{ background-color: lime; }</p></p>
+        <p><strong>HTML</strong></p>
+        <p>&ltdiv&gt</p>
+        <p>&ltspan>FIRST-CHILD&lt/span></p>
+        <p>&ltspan>SECOND CHILD&lt/span></p>
+        </p>&lt/div></p>
+
+
+    </div>
+
+
+    <div  class="step" data-x="-22000" data-y="-16000" data-z="10000" data-scale="4">
+        <span id="first-type">FIRST-CHILD</span>
+        <span id="notfirst-type">SECOND CHILD</span>
+
+    </div>
+
+    <div  class="step" data-x="-24000" data-y="-18000" data-z="-10000" data-scale="4">
+        <p>The :last-child pseudo-selector will apply styling to the last child of it's parent. </p>
+
+    </div>
+
+
+    <div  class="step" data-x="-26000" data-y="-20000" data-z="-13000" data-scale="4">
+        <p><strong>CSS:</strong></p>
+        <p>div :last-child <p>{ background-color: lime; }</p></p>
+        <p><strong>HTML</strong></p>
+        <p>&ltdiv&gt</p>
+        <p>&ltspan>FIRST-CHILD&lt/span></p>
+        <p>&ltspan>LAST CHILD&lt/span></p>
+        </p>&lt/div></p>
+
+
+    </div>
+
+
+    <div  class="step" data-x="-28000" data-y="-22000" data-z="10000" data-scale="4">
+        <span> FIRST-CHILD</span>
+        <span id="first-type">LAST-CHILD</span>
+
+    </div>
+<!-- :first-of-type/:last-of-type -->   <!-- 2-3 Slides-->      <!-- Presenter: Jon -->
+    <div  class="step" data-x="-30000" data-y="-8000" data-z="-3000" data-scale="4">
+<p>The :first-of-type pseudo-selector will apply styling to the first of each element type within the given element. </p>
+
+    </div>
+
+
+    <div  class="step" data-x="-32000" data-y="-8000" data-z="-3000" data-scale="4">
         <p><strong>HTML:</strong></p>
         <p>div :first-of-type <p>{ background-color: lime; }</p></p>
         <p><strong>CSS</strong></p>
@@ -257,20 +533,20 @@
 
     </div>
 
-    <div  class="step" data-x="-10000" data-y="-6000" data-z="10000" data-scale="4">
+    <div  class="step" data-x="-34000" data-y="-8000" data-z="10000" data-scale="4">
         <span id="first-type">FIRST</span>
         <span id="notfirst-type">NOT FIRST</span>
-        <p id="first-type"> FIRST </p>
+        <span id="first-type"> FIRST </span>
 
     </div>
 
-    <div  class="step" data-x="-1100" data-y="-12000" data-z="-700" data-scale="4">
+<div  class="step" data-x="-36000" data-y="-8000" data-z="-700" data-scale="4">
         <p>The :last-of-type pseudo-selector will apply styling to the last of each element type within the given element. </p>
 
     </div>
 
 
-    <div  class="step" data-x="-5000" data-y="-12000" data-z="-3000" data-scale="4">
+    <div  class="step" data-x="-38000" data-y="-8000" data-z="-3000" data-scale="4">
         <p><strong>HTML:</strong></p>
         <p>div :last-of-type <p>{ background-color: lime; }</p></p>
         <p><strong>CSS</strong></p>
@@ -284,7 +560,7 @@
 
     </div>
 
-    <div  class="step" data-x="-2000" data-y="-10000" data-z="10000" data-scale="4">
+    <div  class="step" data-x="-40000" data-y="-8000" data-z="10000" data-scale="4">
         <span id="notfirst-type">NOT LAST</span>
         <span id="first-type">LAST</span>
         <p id="notfirst-type"> NOT LAST </p>
@@ -292,174 +568,83 @@
 
     </div>
 
-    <div  class="step" data-x="-1100" data-y="-15000" data-z="-10000" data-scale="4">
-        <p>The :first-child pseudo-selector will apply styling to the first child of it's parent. </p>
 
+    
+    
+<!-- :nth-child -->     <!-- 2-3 Slides-->      <!-- Presenter: Bre -->
+    <div class="step" data-x="25000" data-y="-8000" data-rotate="180" data-scale="1">
+        <h2> :nth-child </h2>
+        <p>Matches an elements whose index fall in set {an+b; n=0,1,2,…}</p>
+        <p>This allows selectors to match every other row in a table, or it matches if the element is one of the first three children of its parent and also a span. </p>
+        <p>You can also use tr:nth-child(even), tr:nth-child(odd), as well as many more.</p>
+        <p></p>
     </div>
-
-
-    <div  class="step" data-x="-5000" data-y="-15000" data-z="-13000" data-scale="4">
-        <p><strong>CSS:</strong></p>
-        <p>div :first-child <p>{ background-color: lime; }</p></p>
-        <p><strong>HTML</strong></p>
-        <p>&ltdiv&gt</p>
-        <p>&ltspan>FIRST-CHILD&lt/span></p>
-        <p>&ltspan>SECOND CHILD&lt/span></p>
-        </p>&lt/div></p>
-
-
+    
+    <div class="step" data-x="27000" data-y="-8000" data-rotate="180" data-scale="1">
+        <h2> Example: </h2>
+        <p>This Span is limed!</p>
+        <p>This span is not. :(</p>
+        <em>This one is odd. </em>
+        <p>Sadly, this one is not...</p>
+        <p>But this one is!</p>
     </div>
+    
+    <div class="step" data-x="29000" data-y="-8000" data-rotate="180" data-scale="1">
+<h1>:nth-child  example</h1>
+<img src="images/nthchildcss.jpeg" >
+</div>
+
+    <div class="step" data-x="31000" data-y="-8000" data-rotate="180" data-scale="1">
+<h1>:nth-child  example</h1>
+<img src="images/nthchildhtml.jpeg" >
+</div>
+
+    <div class="step" data-x="33000" data-y="-8000" data-rotate="180" data-scale="1">
+<h1>:nth-child  example</h1>
+<img src="images/nthchilddisplay.jpeg" >
+</div>
 
 
-    <div  class="step" data-x="-10000" data-y="-10000" data-z="10000" data-scale="4">
-        <span id="first-type">FIRST-CHILD</span>
-        <span id="notfirst-type">SECOND CHILD</span>
+<!-- :nth-last-child -->    <!-- 2-3 Slides-->      <!-- Presenter: Bre -->
+<div class="step" data-x="35000" data-y="-8000" data-rotate="180" data-scale="1">
+<h1>:nth-last-child example</h1>
+<img src="images/lastchildcss.jpeg" >
+<img src="images/lastchilddisplay.jpeg" >
+<img src="images/lastchildhtml.jpeg" >
+</div>
 
+<!-- :nth-of-type -->   <!-- 2-3 Slides-->      <!-- Presenter: Bre -->
+<div class="step" data-x="37000" data-y="-8000" data-rotate="180" data-scale="1">
+<h1>:nth-of-type  example</h1>
+<img src="images/oftypecode.jpeg" >
+<img src="images/oftypedisplay.jpeg" >
+
+</div>
+<!-- :root -->  <!-- 2-3 Slides-->      <!-- Presenter: Bre -->
+
+    
+    
+<!-- Thanks!-->
+    <div class="step slide" data-x="-500000000000" data-y="-500000000000" data-scale = "4">
+        <h5> Thanks! </h5>
     </div>
-
-    <div  class="step" data-x="-1100" data-y="-18000" data-z="-10000" data-scale="4">
-        <p>The :last-child pseudo-selector will apply styling to the last child of it's parent. </p>
-
-    </div>
-
-
-    <div  class="step" data-x="-5000" data-y="-18000" data-z="-13000" data-scale="4">
-        <p><strong>CSS:</strong></p>
-        <p>div :last-child <p>{ background-color: lime; }</p></p>
-        <p><strong>HTML</strong></p>
-        <p>&ltdiv&gt</p>
-        <p>&ltspan>FIRST-CHILD&lt/span></p>
-        <p>&ltspan>LAST CHILD&lt/span></p>
-        </p>&lt/div></p>
-
-
-    </div>
-
-
-    <div  class="step" data-x="-2000" data-y="-15000" data-z="10000" data-scale="4">
-        <span>FIRST-CHILD</span>
-        <span id="first-type">LAST-CHILD</span>
-
-    </div>
-
-
-
-
-
-
-
-
-
-
-    <!--
-        
-        This element introduces rotation.
-        
-        Notation shouldn't be a surprise. We use `data-rotate="90"` attribute, meaning that this
-        element should be rotated by 90 degrees clockwise.
-        
-    -->
-    <div id="its" class="step" data-x="850" data-y="3000" data-rotate="90" data-scale="5">
-        <p>Class selectors are used to define a certain class.</p>
-        <p>This class can be applied to elemental tags to modify them</p>
-        <p>Classes are not unique and can be used over multiple tags</p>
-    </div>
-
-    <div id="big" class="step" data-x="3500" data-y="2100" data-rotate="180" data-scale="6">
-        <p>I.D. tags are used to modify a single elemental tag</p>
-        <p>Like a class selector but on a smaller scale</p>
-        
-    </div>
-
-    <!--
-        
-        And now it gets really exciting! We move into third dimension!
-        
-        Along with `data-x` and `data-y`, you can define the position on third (Z) axis, with
-        `data-z`. In the example below we use `data-z="-3000"` meaning that element should be
-        positioned far away from us (by 3000px).
-        
-    -->
-    <div id="tiny" class="step" data-x="2825" data-y="2325" data-z="-3000" data-rotate="300" data-scale="1">
-        <p>In HTML and CSS it does not matter if you use an I.D. multiple times</p>
-        <p>If you bring Javascript into the equation however</p>
-        <p><strong>It matters!</strong></p>
-    </div>
-
-    <!--
-        
-        This step here doesn't introduce anything new when it comes to data attributes, but you
-        should notice in the demo that some words of this text are being animated.
-        It's a very basic CSS transition that is applied to the elements when this step element is
-        reached.
-        
-        At the very beginning of the presentation all step elements are given the class of `future`.
-        It means that they haven't been visited yet.
-        
-        When the presentation moves to given step `future` is changed to `present` class name.
-        That's how animation on this step works - text moves when the step has `present` class.
-        
-        Finally when the step is left the `present` class is removed from the element and `past`
-        class is added.
-        
-        So basically every step element has one of three classes: `future`, `present` and `past`.
-        Only one current step has the `present` class.
-        
-    -->
-    <div id="ing" class="step" data-x="3500" data-y="-850" data-rotate="270" data-scale="6">
+    
+   <!-- <div id="ing" class="step" data-x="3500" data-y="-850" data-rotate="270" data-scale="6">
         <p>Element tags can have both an I.D. and Class</p>
        
     </div>
 
-    <div id="imagination" class="step" data-x="6700" data-y="-300" data-scale="6">
-        <p>the only <b>limit</b> is your <b class="imagination">imagination</b></p>
-    </div>
-
-    
-    <div id="overview" class="step" data-x="3000" data-y="1500" data-scale="10">
-    </div>
+    <div id="imagination" class="step" data-x="6700" data-y="-300" data-scale="12">-->
+       
 
 </div>
-
-<!--
-    
-    Hint is not related to impress.js in any way.
-    
-    But it can show you how to use impress.js features in creative way.
-    
-    When the presentation step is shown (selected) its element gets the class of "active" and the body element
-    gets the class based on active step id `impress-on-ID` (where ID is the step's id)... It may not be
-    so clear because of all these "ids" in previous sentence, so for example when the first step (the one with
-    the id of `bored`) is active, body element gets a class of `impress-on-bored`.
-    
-    This class is used by this hint below. Check CSS file to see how it's shown with delayed CSS animation when
-    the first step of presentation is visible for a couple of seconds.
-    
-    ...
-    
-    And when it comes to this piece of JavaScript below ... kids, don't do this at home ;)
-    It's just a quick and dirty workaround to get different hint text for touch devices.
-    In a real world it should be at least placed in separate JS file ... and the touch content should be
-    probably just hidden somewhere in HTML - not hard-coded in the script.
-    
-    Just sayin' ;)
-    
--->
-<div class="hint">
-    <p>Use a spacebar or arrow keys to navigate</p>
-</div>
-<script>
-if ("ontouchstart" in document.documentElement) { 
-    document.querySelector(".hint").innerHTML = "<p>Tap on the left or right to navigate</p>";
-}
-</script>
 
 <!--
     
     Last, but not least.
     
     To make all described above really work, you need to include impress.js in the page.
-    I strongly encourage to minify it first.
+    I strongly encourage you to magnify it first.
     
     In here I just include full source of the script to make it more readable.
     
@@ -499,49 +684,4 @@ if ("ontouchstart" in document.documentElement) {
 
 </body>
 </html>
-
-<!--
-    
-    Now you know more or less everything you need to build your first impress.js presentation, but before
-    you start...
-    
-    Oh, you've already cloned the code from GitHub?
-    
-    You have it open in text editor?
-    
-    Stop right there!
-    
-    That's not how you create awesome presentations. This is only a code. Implementation of the idea that
-    first needs to grow in your mind.
-    
-    So if you want to build great presentation take a pencil and piece of paper. And turn off the computer.
-    
-    Sketch, draw and write. Brainstorm your ideas on a paper. Try to build a mind-map of what you'd like
-    to present. It will get you closer and closer to the layout you'll build later with impress.js.
-    
-    Get back to the code only when you have your presentation ready on a paper. It doesn't make sense to do
-    it earlier, because you'll only waste your time fighting with positioning of useless points.
-    
-    If you think I'm crazy, please put your hands on a book called "Presentation Zen". It's all about 
-    creating awesome and engaging presentations.
-    
-    Think about it. 'Cause impress.js may not help you, if you have nothing interesting to say.
-    
--->
-
-<!--
-    
-    Are you still reading this?
-    
-    For real?
-    
-    I'm impressed! Feel free to let me know that you got that far (I'm @bartaz on Twitter), 'cause I'd like
-    to congratulate you personally :)
-    
-    But you don't have to do it now. Take my advice and take some time off. Make yourself a cup of coffee, tea,
-    or anything you like to drink. And raise a glass for me ;)
-    
-    Cheers!
-    
--->
 
