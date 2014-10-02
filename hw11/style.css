@@ -4,6 +4,14 @@ h1 {
 
 html {
 	background-image: -webkit-linear-gradient(bottom, #FFFFFF 20%, #81BEF7 100%);
+	background-image: -moz-linear-gradient(bottom, #FFFFFF 20%, #81BEF7 100%);
+
+}
+
+footer {
+	background-image: -webkit-linear-gradient(top, #FFFFFF 20%, #81BEF7 100%);
+	background-image: -moz-linear-gradient(top, #FFFFFF 20%, #81BEF7 100%);
+
 }
 body {
 
@@ -11,8 +19,11 @@ body {
 	background-size: 100%;
 	background-repeat: no-repeat;
 
+
+
     }
 
  img {
     box-shadow: 10px 10px 5px rgba(0,0,0,.5);
+
 }
