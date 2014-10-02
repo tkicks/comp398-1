@@ -1,0 +1,95 @@
+<html>
+<head>
+
+	<link rel="stylesheet" href="http://cdn.leafletjs.com/leaflet-0.7.3/leaflet.css" />
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<script src="http://cdn.leafletjs.com/leaflet-0.7.3/leaflet.js"></script>
+
+</head>
+
+ <div id="map"></div>
+
+ <script>
+ 	var map = L.map('map').setView([51.505, -0.09], 13);
+
+ 	L.tileLayer('http://{s}.tiles.mapbox.com/v3/jdliss.jkhne5b0/{z}/{x}/{y}.png', {
+
+ 		attribution: 'Map data &copy; <a href="http://openstreetmap.org">OpenStreetMap</a> contributors, <a href="http://creativecommons.org/licenses/by-sa/2.0/">CC-BY-SA</a>, Imagery © <a href="http://mapbox.com">Mapbox</a>',
+    maxZoom: 18
+}).addTo(map);
+
+ 	var marker = L.marker([51.5, -0.09]).addTo(map);
+
+ 	var circle = L.circle([51.508, -0.11], 500, {
+    color: 'red',
+    fillColor: '#f03',
+    fillOpacity: 0.5
+}).addTo(map);
+
+ 	var head = L.circle([51.56288, -0.08188], 1300, {
+    color: 'red',
+    fillOpacity: 0
+}).addTo(map);
+
+ 	var eye = L.circle([51.56588, -0.09201], 250, {
+    color: 'red',
+    fillColor: '#f03',
+    fillOpacity: 0.5
+}).addTo(map);
+
+ 	var eye2 = L.circle([51.56608, -0.07278], 250, {
+    color: 'red',
+    fillColor: '#f03',
+    fillOpacity: 0.5
+}).addTo(map);
+
+
+var mouth = L.polygon([
+    [51.56053, -0.09287],
+    [51.56042, -0.07193],
+    [51.55541, -0.08102]
+]).addTo(map);
+ 	
+
+ 	
+
+ 	var polygon = L.polygon([
+    [51.509, -0.08],
+    [51.503, -0.06],
+    [51.51, -0.047]
+]).addTo(map);
+
+ 	marker.bindPopup("<b>Hello world!</b><br>I am a popup.").openPopup();
+	circle.bindPopup("I am a circle.");
+	polygon.bindPopup("I am a polygon.");
+
+	var popup = L.popup()
+    	.setLatLng([51.5, -0.09])
+    	.setContent("I am a standalone popup.")
+    	.openOn(map);
+
+    function onMapClick(e) {
+    	alert("You clicked the map at " + e.latlng);
+}
+
+	map.on('click', onMapClick);
+
+	var popup = L.popup();
+
+	function onMapClick(e) {
+    	popup
+        	.setLatLng(e.latlng)
+        	.setContent("You clicked the map at " + e.latlng.toString())
+        	.openOn(map);
+}
+
+map.on('click', onMapClick);
+
+
+</script>
+
+
+
+
+
+</html>

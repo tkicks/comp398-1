@@ -1,0 +1,18 @@
+h1 {
+	color: black;
+}
+
+html {
+	background-image: -webkit-linear-gradient(bottom, #FFFFFF 20%, #81BEF7 100%);
+}
+body {
+
+	background: url(http://paradisevalleycollection.com/wp-content/themes/wp-foundation/images/sidebar-shadow.png);
+	background-size: 100%;
+	background-repeat: no-repeat;
+
+    }
+
+ img {
+    box-shadow: 10px 10px 5px rgba(0,0,0,.5);
+}
